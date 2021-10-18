@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#92F5EFB0"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Ticket"
+    tools:showIn="@layout/activity_ticket">
+
+    <Space
+        android:id="@+id/space001"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:id="@+id/line001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space001"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txtticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="請選擇票券"
+            android:textColor="#009688"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spnticket"
+            android:layout_width="187dp"
+            android:layout_height="match_parent"
+            android:dropDownWidth="wrap_content"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:background="#03A9F4"
+            android:text="加入購物車"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/space002"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/line001"/>
+
+    <LinearLayout
+        android:id="@+id/line002"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/space002">
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的購物車"
+            android:textColor="#9C27B0"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstcar"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/line002" />
+
+    <TextView
+        android:id="@+id/txtmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lstcar"
+        android:text="總票價：0"
+        android:textColor="#F44336"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <Space
+        android:id="@+id/space003"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/txtmoney"/>
+
+    <Button
+        android:id="@+id/btnbuy"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space003"
+        android:layout_centerHorizontal="true"
+        android:background="#E91E63"
+        android:text="確認購買"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

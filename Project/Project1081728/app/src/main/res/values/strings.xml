@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TraVeler旅遊</string>
+    <string name="title_activity_goole_maps">景點地圖</string>
+    <string name="title_activity_home">首頁</string>
+    <string name="title_activity_travel">旅遊景點</string>
+    <string name="title_activity_ticket">票券購買</string>
+</resources>

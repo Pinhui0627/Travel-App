@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include tools:context="com.example.project1081728.Travel"/>
+    <include tools:context="com.example.project1081728.GoogleMaps"/>
+    <include tools:context="com.example.project1081728.Home"/>
+    <include tools:context="com.example.project1081728.Ticket"/>
+
+    <item
+        android:id="@+id/action_Home"
+        android:orderInCategory="0"
+        android:title="首頁"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/action_Traval"
+        android:orderInCategory="1"
+        android:title="旅遊景點"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Map"
+        android:orderInCategory="2"
+        android:title="景點地圖"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Test"
+        android:orderInCategory="3"
+        android:title="景點知多少"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Ticket"
+        android:orderInCategory="4"
+        android:title="票券訂購"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Dial"
+        android:orderInCategory="5"
+        android:title="聯絡我們"
+        app:showAsAction="never" />
+</menu>
